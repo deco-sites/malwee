@@ -16,43 +16,46 @@ import * as $$2 from "./islands/HeaderModals.tsx";
 import * as $$3 from "./islands/HeaderSearchMenu.tsx";
 import * as $$4 from "./islands/SearchControls.tsx";
 import * as $$5 from "./islands/SliderJS.tsx";
-import * as $$$0 from "./sections/BannerGrid.tsx";
-import * as $$$1 from "./sections/Carousel.tsx";
-import * as $$$2 from "./sections/CookieConsent.tsx";
-import * as $$$3 from "./sections/DesignSystem.story.tsx";
-import * as $$$4 from "./sections/Features.tsx";
-import * as $$$5 from "./sections/Footer.tsx";
-import * as $$$6 from "./sections/Header.tsx";
-import * as $$$7 from "./sections/Highlights.tsx";
-import * as $$$8 from "./sections/ProductDetails.tsx";
-import * as $$$9 from "./sections/ProductGallery.tsx";
-import * as $$$10 from "./sections/ProductShelf.tsx";
-import * as $$$11 from "./sections/SearchControls.tsx";
-import * as $$$12 from "./sections/WhatsApp.tsx";
-import * as $$$13 from "deco-sites/std/sections/SEO.tsx";
-import * as $$$14 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as $$$15 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as $$$16 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as $$$17 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as $$$18 from "deco-sites/std/sections/configVTEX.global.tsx";
-import * as $$$$0 from "$live/functions/EffectSelectPage.ts";
-import * as $$$$1 from "$live/functions/MatchDate.ts";
-import * as $$$$2 from "$live/functions/MatchEnvironment.ts";
-import * as $$$$3 from "$live/functions/MatchRandom.ts";
-import * as $$$$4 from "$live/functions/MatchSite.ts";
-import * as $$$$5 from "$live/functions/MatchUserAgent.ts";
-import * as $$$$6 from "deco-sites/std/functions/occProductDetailsPage.ts";
-import * as $$$$7 from "deco-sites/std/functions/shopifyProductDetailsPage.ts";
-import * as $$$$8 from "deco-sites/std/functions/shopifyProductList.ts";
-import * as $$$$9 from "deco-sites/std/functions/shopifyProductListingPage.ts";
-import * as $$$$10 from "deco-sites/std/functions/vtexConfig.ts";
-import * as $$$$11 from "deco-sites/std/functions/vtexLegacyProductDetailsPage.ts";
-import * as $$$$12 from "deco-sites/std/functions/vtexLegacyProductList.ts";
-import * as $$$$13 from "deco-sites/std/functions/vtexLegacyProductListingPage.ts";
-import * as $$$$14 from "deco-sites/std/functions/vtexProductDetailsPage.ts";
-import * as $$$$15 from "deco-sites/std/functions/vtexProductList.ts";
-import * as $$$$16 from "deco-sites/std/functions/vtexProductListingPage.ts";
-import * as $$$$17 from "deco-sites/std/functions/vtexSuggestions.ts";
+import * as $$$0 from "./sections/Banner.tsx";
+import * as $$$1 from "./sections/BannerGrid.tsx";
+import * as $$$2 from "./sections/Carousel.tsx";
+import * as $$$3 from "./sections/Categories.tsx";
+import * as $$$4 from "./sections/CookieConsent.tsx";
+import * as $$$5 from "./sections/DesignSystem.story.tsx";
+import * as $$$6 from "./sections/Features.tsx";
+import * as $$$7 from "./sections/Footer.tsx";
+import * as $$$8 from "./sections/Header.tsx";
+import * as $$$9 from "./sections/Highlights.tsx";
+import * as $$$10 from "./sections/ProductDetails.tsx";
+import * as $$$11 from "./sections/ProductGallery.tsx";
+import * as $$$12 from "./sections/ProductShelf.tsx";
+import * as $$$13 from "./sections/SearchControls.tsx";
+import * as $$$14 from "./sections/WhatsApp.tsx";
+import * as $$$15 from "deco-sites/std/sections/SEO.tsx";
+import * as $$$16 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as $$$17 from "deco-sites/std/sections/SEOPLP.tsx";
+import * as $$$18 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as $$$19 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as $$$20 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as $$$$0 from "./functions/categoriesVtex.ts";
+import * as $$$$1 from "$live/functions/EffectSelectPage.ts";
+import * as $$$$2 from "$live/functions/MatchDate.ts";
+import * as $$$$3 from "$live/functions/MatchEnvironment.ts";
+import * as $$$$4 from "$live/functions/MatchRandom.ts";
+import * as $$$$5 from "$live/functions/MatchSite.ts";
+import * as $$$$6 from "$live/functions/MatchUserAgent.ts";
+import * as $$$$7 from "deco-sites/std/functions/occProductDetailsPage.ts";
+import * as $$$$8 from "deco-sites/std/functions/shopifyProductDetailsPage.ts";
+import * as $$$$9 from "deco-sites/std/functions/shopifyProductList.ts";
+import * as $$$$10 from "deco-sites/std/functions/shopifyProductListingPage.ts";
+import * as $$$$11 from "deco-sites/std/functions/vtexConfig.ts";
+import * as $$$$12 from "deco-sites/std/functions/vtexLegacyProductDetailsPage.ts";
+import * as $$$$13 from "deco-sites/std/functions/vtexLegacyProductList.ts";
+import * as $$$$14 from "deco-sites/std/functions/vtexLegacyProductListingPage.ts";
+import * as $$$$15 from "deco-sites/std/functions/vtexProductDetailsPage.ts";
+import * as $$$$16 from "deco-sites/std/functions/vtexProductList.ts";
+import * as $$$$17 from "deco-sites/std/functions/vtexProductListingPage.ts";
+import * as $$$$18 from "deco-sites/std/functions/vtexSuggestions.ts";
 
 const manifest: DecoManifest = {
   routes: {
@@ -71,47 +74,77 @@ const manifest: DecoManifest = {
     "./islands/SliderJS.tsx": $$5,
   },
   sections: {
-    "./sections/BannerGrid.tsx": $$$0,
-    "./sections/Carousel.tsx": $$$1,
-    "./sections/CookieConsent.tsx": $$$2,
-    "./sections/DesignSystem.story.tsx": $$$3,
-    "./sections/Features.tsx": $$$4,
-    "./sections/Footer.tsx": $$$5,
-    "./sections/Header.tsx": $$$6,
-    "./sections/Highlights.tsx": $$$7,
-    "./sections/ProductDetails.tsx": $$$8,
-    "./sections/ProductGallery.tsx": $$$9,
-    "./sections/ProductShelf.tsx": $$$10,
-    "./sections/SearchControls.tsx": $$$11,
-    "./sections/WhatsApp.tsx": $$$12,
-    "deco-sites/std/sections/SEO.tsx": $$$13,
-    "deco-sites/std/sections/SEOPDP.tsx": $$$14,
-    "deco-sites/std/sections/SEOPLP.tsx": $$$15,
-    "deco-sites/std/sections/configOCC.global.tsx": $$$16,
-    "deco-sites/std/sections/configShopify.global.tsx": $$$17,
-    "deco-sites/std/sections/configVTEX.global.tsx": $$$18,
+    "./sections/Banner.tsx": $$$0,
+    "./sections/BannerGrid.tsx": $$$1,
+    "./sections/Carousel.tsx": $$$2,
+    "./sections/Categories.tsx": $$$3,
+    "./sections/CookieConsent.tsx": $$$4,
+    "./sections/DesignSystem.story.tsx": $$$5,
+    "./sections/Features.tsx": $$$6,
+    "./sections/Footer.tsx": $$$7,
+    "./sections/Header.tsx": $$$8,
+    "./sections/Highlights.tsx": $$$9,
+    "./sections/ProductDetails.tsx": $$$10,
+    "./sections/ProductGallery.tsx": $$$11,
+    "./sections/ProductShelf.tsx": $$$12,
+    "./sections/SearchControls.tsx": $$$13,
+    "./sections/WhatsApp.tsx": $$$14,
+    "deco-sites/std/sections/SEO.tsx": $$$15,
+    "deco-sites/std/sections/SEOPDP.tsx": $$$16,
+    "deco-sites/std/sections/SEOPLP.tsx": $$$17,
+    "deco-sites/std/sections/configOCC.global.tsx": $$$18,
+    "deco-sites/std/sections/configShopify.global.tsx": $$$19,
+    "deco-sites/std/sections/configVTEX.global.tsx": $$$20,
   },
   functions: {
-    "$live/functions/EffectSelectPage.ts": $$$$0,
-    "$live/functions/MatchDate.ts": $$$$1,
-    "$live/functions/MatchEnvironment.ts": $$$$2,
-    "$live/functions/MatchRandom.ts": $$$$3,
-    "$live/functions/MatchSite.ts": $$$$4,
-    "$live/functions/MatchUserAgent.ts": $$$$5,
-    "deco-sites/std/functions/occProductDetailsPage.ts": $$$$6,
-    "deco-sites/std/functions/shopifyProductDetailsPage.ts": $$$$7,
-    "deco-sites/std/functions/shopifyProductList.ts": $$$$8,
-    "deco-sites/std/functions/shopifyProductListingPage.ts": $$$$9,
-    "deco-sites/std/functions/vtexConfig.ts": $$$$10,
-    "deco-sites/std/functions/vtexLegacyProductDetailsPage.ts": $$$$11,
-    "deco-sites/std/functions/vtexLegacyProductList.ts": $$$$12,
-    "deco-sites/std/functions/vtexLegacyProductListingPage.ts": $$$$13,
-    "deco-sites/std/functions/vtexProductDetailsPage.ts": $$$$14,
-    "deco-sites/std/functions/vtexProductList.ts": $$$$15,
-    "deco-sites/std/functions/vtexProductListingPage.ts": $$$$16,
-    "deco-sites/std/functions/vtexSuggestions.ts": $$$$17,
+    "./functions/categoriesVtex.ts": $$$$0,
+    "$live/functions/EffectSelectPage.ts": $$$$1,
+    "$live/functions/MatchDate.ts": $$$$2,
+    "$live/functions/MatchEnvironment.ts": $$$$3,
+    "$live/functions/MatchRandom.ts": $$$$4,
+    "$live/functions/MatchSite.ts": $$$$5,
+    "$live/functions/MatchUserAgent.ts": $$$$6,
+    "deco-sites/std/functions/occProductDetailsPage.ts": $$$$7,
+    "deco-sites/std/functions/shopifyProductDetailsPage.ts": $$$$8,
+    "deco-sites/std/functions/shopifyProductList.ts": $$$$9,
+    "deco-sites/std/functions/shopifyProductListingPage.ts": $$$$10,
+    "deco-sites/std/functions/vtexConfig.ts": $$$$11,
+    "deco-sites/std/functions/vtexLegacyProductDetailsPage.ts": $$$$12,
+    "deco-sites/std/functions/vtexLegacyProductList.ts": $$$$13,
+    "deco-sites/std/functions/vtexLegacyProductListingPage.ts": $$$$14,
+    "deco-sites/std/functions/vtexProductDetailsPage.ts": $$$$15,
+    "deco-sites/std/functions/vtexProductList.ts": $$$$16,
+    "deco-sites/std/functions/vtexProductListingPage.ts": $$$$17,
+    "deco-sites/std/functions/vtexSuggestions.ts": $$$$18,
   },
   schemas: {
+    "./sections/Banner.tsx": {
+      "inputSchema": {
+        "title": " Banner",
+        "type": "object",
+        "properties": {
+          "image": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Image",
+          },
+          "url": {
+            "type": "string",
+            "title": "Url",
+          },
+          "alt": {
+            "type": "string",
+            "title": "Alt",
+          },
+        },
+        "required": [
+          "image",
+          "url",
+          "alt",
+        ],
+      },
+      "outputSchema": null,
+    },
     "./sections/BannerGrid.tsx": {
       "inputSchema": {
         "title": " Banner Grid",
@@ -303,6 +336,46 @@ const manifest: DecoManifest = {
           },
         },
         "required": [],
+      },
+      "outputSchema": null,
+    },
+    "./sections/Categories.tsx": {
+      "inputSchema": {
+        "title": " Categories",
+        "type": "object",
+        "properties": {
+          "categories": {
+            "type": "array",
+            "items": {
+              "title": "Category",
+              "type": "object",
+              "properties": {
+                "image": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Image",
+                },
+                "name": {
+                  "type": "string",
+                  "title": "Name",
+                },
+                "url": {
+                  "type": "string",
+                  "title": "Url",
+                },
+              },
+              "required": [
+                "image",
+                "name",
+                "url",
+              ],
+            },
+            "title": "Categories",
+          },
+        },
+        "required": [
+          "categories",
+        ],
       },
       "outputSchema": null,
     },
@@ -1000,6 +1073,10 @@ const manifest: DecoManifest = {
         },
         "required": [],
       },
+      "outputSchema": null,
+    },
+    "./functions/categoriesVtex.ts": {
+      "inputSchema": null,
       "outputSchema": null,
     },
     "$live/functions/EffectSelectPage.ts": {
