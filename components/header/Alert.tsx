@@ -17,19 +17,35 @@ function Alert({ alerts = [], interval = 5 }: Props) {
 
   return (
     <div id={id}>
-      <Slider class="bg-badge gap-6 scrollbar-none">
-        {alerts.map((alert) => (
-          <Text
-            class="flex justify-center items-center w-screen h-[38px]"
-            variant="caption"
-            tone="default-inverse"
-          >
-            {alert}
-          </Text>
-        ))}
-      </Slider>
+      <div class="md:hidden">
+        <Slider class="bg-black gap-6 scrollbar-none">
+          {alerts.map((alert) => (
+            <Text
+              class="flex justify-center items-center w-screen h-[38px]"
+              variant="caption"
+              tone="default-inverse"
+            >
+              {alert}
+            </Text>
+          ))}
+        </Slider>
 
-      <SliderControllerJS rootId={id} interval={interval && interval * 1e3} />
+        <SliderControllerJS rootId={id} interval={interval && interval * 1e3} />
+      </div>
+      <div class="hidden md:block">
+        <div class="flex flex-row justify-around bg-black">
+          {alerts.map((alert) => (
+              <Text
+                class="flex justify-center items-center h-[38px] underline cursor-pointer"
+                variant="caption"
+                tone="default-inverse"
+                
+              >
+                {alert}
+              </Text>
+            ))}
+        </div>
+      </div>
     </div>
   );
 }
