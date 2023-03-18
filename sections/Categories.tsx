@@ -43,8 +43,8 @@ export default function Category({categories}: Props) {
                     return (
                         <article>
                             <div>
-                                <a href={category.url}>
-                                    <img src={category.image} alt="" />
+                                <a href={category.url} class="block group overflow-hidden">
+                                    <img src={category.image} class="hover:transform hover:scale-110" alt="" />
                                 </a>
                             </div>
                             <div class="text-[1.125rem] font-bold" style="font-family: 'Neo Sans', sans-serif;">{category.name}</div>
