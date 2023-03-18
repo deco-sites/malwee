@@ -22,21 +22,22 @@ import * as $$$2 from "./sections/Carousel.tsx";
 import * as $$$3 from "./sections/Categories.tsx";
 import * as $$$4 from "./sections/CookieConsent.tsx";
 import * as $$$5 from "./sections/DesignSystem.story.tsx";
-import * as $$$6 from "./sections/Features.tsx";
-import * as $$$7 from "./sections/Footer.tsx";
-import * as $$$8 from "./sections/Header.tsx";
-import * as $$$9 from "./sections/Highlights.tsx";
-import * as $$$10 from "./sections/ProductDetails.tsx";
-import * as $$$11 from "./sections/ProductGallery.tsx";
-import * as $$$12 from "./sections/ProductShelf.tsx";
-import * as $$$13 from "./sections/SearchControls.tsx";
-import * as $$$14 from "./sections/WhatsApp.tsx";
-import * as $$$15 from "deco-sites/std/sections/SEO.tsx";
-import * as $$$16 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as $$$17 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as $$$18 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as $$$19 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as $$$20 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as $$$6 from "./sections/Featured.tsx";
+import * as $$$7 from "./sections/Features.tsx";
+import * as $$$8 from "./sections/Footer.tsx";
+import * as $$$9 from "./sections/Header.tsx";
+import * as $$$10 from "./sections/Highlights.tsx";
+import * as $$$11 from "./sections/ProductDetails.tsx";
+import * as $$$12 from "./sections/ProductGallery.tsx";
+import * as $$$13 from "./sections/ProductShelf.tsx";
+import * as $$$14 from "./sections/SearchControls.tsx";
+import * as $$$15 from "./sections/WhatsApp.tsx";
+import * as $$$16 from "deco-sites/std/sections/SEO.tsx";
+import * as $$$17 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as $$$18 from "deco-sites/std/sections/SEOPLP.tsx";
+import * as $$$19 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as $$$20 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as $$$21 from "deco-sites/std/sections/configVTEX.global.tsx";
 import * as $$$$0 from "./functions/categoriesVtex.ts";
 import * as $$$$1 from "$live/functions/EffectSelectPage.ts";
 import * as $$$$2 from "$live/functions/MatchDate.ts";
@@ -80,21 +81,22 @@ const manifest: DecoManifest = {
     "./sections/Categories.tsx": $$$3,
     "./sections/CookieConsent.tsx": $$$4,
     "./sections/DesignSystem.story.tsx": $$$5,
-    "./sections/Features.tsx": $$$6,
-    "./sections/Footer.tsx": $$$7,
-    "./sections/Header.tsx": $$$8,
-    "./sections/Highlights.tsx": $$$9,
-    "./sections/ProductDetails.tsx": $$$10,
-    "./sections/ProductGallery.tsx": $$$11,
-    "./sections/ProductShelf.tsx": $$$12,
-    "./sections/SearchControls.tsx": $$$13,
-    "./sections/WhatsApp.tsx": $$$14,
-    "deco-sites/std/sections/SEO.tsx": $$$15,
-    "deco-sites/std/sections/SEOPDP.tsx": $$$16,
-    "deco-sites/std/sections/SEOPLP.tsx": $$$17,
-    "deco-sites/std/sections/configOCC.global.tsx": $$$18,
-    "deco-sites/std/sections/configShopify.global.tsx": $$$19,
-    "deco-sites/std/sections/configVTEX.global.tsx": $$$20,
+    "./sections/Featured.tsx": $$$6,
+    "./sections/Features.tsx": $$$7,
+    "./sections/Footer.tsx": $$$8,
+    "./sections/Header.tsx": $$$9,
+    "./sections/Highlights.tsx": $$$10,
+    "./sections/ProductDetails.tsx": $$$11,
+    "./sections/ProductGallery.tsx": $$$12,
+    "./sections/ProductShelf.tsx": $$$13,
+    "./sections/SearchControls.tsx": $$$14,
+    "./sections/WhatsApp.tsx": $$$15,
+    "deco-sites/std/sections/SEO.tsx": $$$16,
+    "deco-sites/std/sections/SEOPDP.tsx": $$$17,
+    "deco-sites/std/sections/SEOPLP.tsx": $$$18,
+    "deco-sites/std/sections/configOCC.global.tsx": $$$19,
+    "deco-sites/std/sections/configShopify.global.tsx": $$$20,
+    "deco-sites/std/sections/configVTEX.global.tsx": $$$21,
   },
   functions: {
     "./functions/categoriesVtex.ts": $$$$0,
@@ -391,6 +393,46 @@ const manifest: DecoManifest = {
     },
     "./sections/DesignSystem.story.tsx": {
       "inputSchema": null,
+      "outputSchema": null,
+    },
+    "./sections/Featured.tsx": {
+      "inputSchema": {
+        "title": " Featured",
+        "type": "object",
+        "properties": {
+          "images": {
+            "type": "array",
+            "items": {
+              "title": "Featured",
+              "type": "object",
+              "properties": {
+                "image": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Image",
+                },
+                "name": {
+                  "type": "string",
+                  "title": "Name",
+                },
+                "url": {
+                  "type": "string",
+                  "title": "Url",
+                },
+              },
+              "required": [
+                "image",
+                "name",
+                "url",
+              ],
+            },
+            "title": "Images",
+          },
+        },
+        "required": [
+          "images",
+        ],
+      },
       "outputSchema": null,
     },
     "./sections/Features.tsx": {
