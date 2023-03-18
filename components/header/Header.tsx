@@ -4,6 +4,7 @@ import type { EditableProps as SearchbarProps } from "$store/components/search/S
 import type { LoaderReturnType } from "$live/types.ts";
 import type { Product, Suggestion } from "deco-sites/std/commerce/types.ts";
 import type { ClientConfigVTEX } from "deco-sites/std/functions/vtexConfig.ts";
+import type { CategoriesVtex } from "../../functions/categoriesVtex.ts";
 
 import Alert from "./Alert.tsx";
 import Navbar from "./Navbar.tsx";
@@ -27,6 +28,7 @@ export interface NavItem {
 }
 
 export interface Props {
+  categoriesVtex?: LoaderReturnType<CategoriesVtex>
   alerts: string[];
   /** @title Search Bar */
   searchbar?: SearchbarProps;

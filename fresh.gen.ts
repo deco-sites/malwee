@@ -128,6 +128,11 @@ const manifest: DecoManifest = {
             "type": "string",
             "title": "Image",
           },
+          "imageMob": {
+            "format": "image-uri",
+            "type": "string",
+            "title": "Image Mob",
+          },
           "url": {
             "type": "string",
             "title": "Url",
@@ -139,6 +144,7 @@ const manifest: DecoManifest = {
         },
         "required": [
           "image",
+          "imageMob",
           "url",
           "alt",
         ],
@@ -763,6 +769,12 @@ const manifest: DecoManifest = {
         "title": " Header",
         "type": "object",
         "properties": {
+          "categoriesVtex": {
+            "$id": "fc0cee94abe9a3f8f4910c075363724c58050a7d",
+            "format": "live-function",
+            "type": "string",
+            "title": "Categories Vtex",
+          },
           "alerts": {
             "type": "array",
             "items": {
@@ -1076,8 +1088,29 @@ const manifest: DecoManifest = {
       "outputSchema": null,
     },
     "./functions/categoriesVtex.ts": {
-      "inputSchema": null,
-      "outputSchema": null,
+      "inputSchema": {
+        "title": "Categories Vtex",
+        "type": "object",
+        "properties": {
+          "levelSearch": {
+            "type": [
+              "number",
+              "null",
+            ],
+            "title": "Level Search",
+          },
+        },
+        "required": [],
+      },
+      "outputSchema": {
+        "type": "object",
+        "properties": {
+          "data": {
+            "$id": "b39bd75e43a634b2e0ee079146e839fe20ca3508",
+          },
+        },
+        "additionalProperties": true,
+      },
     },
     "$live/functions/EffectSelectPage.ts": {
       "inputSchema": {
