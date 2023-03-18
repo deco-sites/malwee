@@ -140,6 +140,13 @@ const options: Omit<Options, "selfURL"> = {
       overflow: "hidden",
       height: "100vh",
     },
+    '.hidden-scroll::-webkit-scrollbar': {
+      display: 'none',
+    },
+    'hidden-scroll':{
+      '-ms-overflow-style': 'none',  /* IE and Edge */
+      'scrollbar-width': 'none'  /* Firefox */
+    }
   }),
   plugins: {
     backdrop: {

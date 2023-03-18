@@ -31,13 +31,14 @@ import * as $$$11 from "./sections/ProductDetails.tsx";
 import * as $$$12 from "./sections/ProductGallery.tsx";
 import * as $$$13 from "./sections/ProductShelf.tsx";
 import * as $$$14 from "./sections/SearchControls.tsx";
-import * as $$$15 from "./sections/WhatsApp.tsx";
-import * as $$$16 from "deco-sites/std/sections/SEO.tsx";
-import * as $$$17 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as $$$18 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as $$$19 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as $$$20 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as $$$21 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as $$$15 from "./sections/Sustentability.tsx";
+import * as $$$16 from "./sections/WhatsApp.tsx";
+import * as $$$17 from "deco-sites/std/sections/SEO.tsx";
+import * as $$$18 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as $$$19 from "deco-sites/std/sections/SEOPLP.tsx";
+import * as $$$20 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as $$$21 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as $$$22 from "deco-sites/std/sections/configVTEX.global.tsx";
 import * as $$$$0 from "./functions/categoriesVtex.ts";
 import * as $$$$1 from "$live/functions/EffectSelectPage.ts";
 import * as $$$$2 from "$live/functions/MatchDate.ts";
@@ -90,13 +91,14 @@ const manifest: DecoManifest = {
     "./sections/ProductGallery.tsx": $$$12,
     "./sections/ProductShelf.tsx": $$$13,
     "./sections/SearchControls.tsx": $$$14,
-    "./sections/WhatsApp.tsx": $$$15,
-    "deco-sites/std/sections/SEO.tsx": $$$16,
-    "deco-sites/std/sections/SEOPDP.tsx": $$$17,
-    "deco-sites/std/sections/SEOPLP.tsx": $$$18,
-    "deco-sites/std/sections/configOCC.global.tsx": $$$19,
-    "deco-sites/std/sections/configShopify.global.tsx": $$$20,
-    "deco-sites/std/sections/configVTEX.global.tsx": $$$21,
+    "./sections/Sustentability.tsx": $$$15,
+    "./sections/WhatsApp.tsx": $$$16,
+    "deco-sites/std/sections/SEO.tsx": $$$17,
+    "deco-sites/std/sections/SEOPDP.tsx": $$$18,
+    "deco-sites/std/sections/SEOPLP.tsx": $$$19,
+    "deco-sites/std/sections/configOCC.global.tsx": $$$20,
+    "deco-sites/std/sections/configShopify.global.tsx": $$$21,
+    "deco-sites/std/sections/configVTEX.global.tsx": $$$22,
   },
   functions: {
     "./functions/categoriesVtex.ts": $$$$0,
@@ -1108,6 +1110,56 @@ const manifest: DecoManifest = {
         },
         "required": [
           "page",
+        ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/Sustentability.tsx": {
+      "inputSchema": {
+        "title": " Sustentability",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+          "cards": {
+            "type": "array",
+            "items": {
+              "title": "Card",
+              "type": "object",
+              "properties": {
+                "image": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Image",
+                },
+                "url": {
+                  "type": "string",
+                  "title": "Url",
+                },
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Text",
+                },
+              },
+              "required": [
+                "image",
+                "url",
+                "title",
+                "text",
+              ],
+            },
+            "title": "Cards",
+          },
+        },
+        "required": [
+          "title",
+          "cards",
         ],
       },
       "outputSchema": null,
