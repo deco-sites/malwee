@@ -15,30 +15,33 @@ function Navbar({ items, searchbar }: {
   return (
     <>
       {/* Mobile Version */}
-      <div
-        class={`md:hidden flex flex-row justify-between items-center h-[${navbarHeight}] border-b-1 border-default w-full px-2 gap-2`}
-      >
-        <HeaderButton variant="menu" />
-
-        <a
-          href="/"
-          class={`flex-grow inline-flex items-center min-h-[${navbarHeight}]`}
-          aria-label="Store logo"
+      <div>
+        <div
+          class={`md:hidden flex flex-row justify-between items-center h-[${navbarHeight}] border-b-1 border-default w-full px-2 gap-2`}
         >
-          <Icon id="Logo" width={126} height={16} />
-        </a>
+          <HeaderButton variant="menu" />
 
-        <div class="flex gap-1">
+          <a
+            href="/"
+            class={`inline-flex items-center min-h-[${navbarHeight}]`}
+            aria-label="Store logo"
+          >
+            <Icon id="Logo" width={149} height={30} />
+          </a>
+
+          <div class="flex gap-1">
+            <HeaderButton variant="cart" />
+          </div>
+        </div>
+        <div class={`md:hidden flex flex-row justify-end items-center h-[${navbarHeight}] border-b-1 border-default w-full px-2 gap-2`}>
           <HeaderButton variant="search" />
-          <HeaderButton variant="cart" />
         </div>
       </div>
-
       {/* Desktop Version */}
-      <div class="hidden md:flex flex-row justify-between items-center border-b-1 border-default w-full pl-2 pr-3">
+      <div class="hidden md:flex flex-row justify-between items-center w-full pl-2 pr-3">
         <div class="flex-none w-44">
           <a href="/" aria-label="Store logo" class="block px-4 py-3 w-[160px]">
-            <Icon id="Logo" width={126} height={16} />
+            <Icon id="Logo" width={149} height={30} />
           </a>
         </div>
         <div class="flex-auto flex justify-center">
