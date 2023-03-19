@@ -80,7 +80,7 @@ function ProductCard({ product, preload }: Props) {
             <div
               class="absolute bottom-0 hidden sm:group-hover:flex flex-col gap-2 w-full p-2 bg-opacity-10"
               style={{
-                backgroundColor: "rgba(255, 255, 255, 0.2)",
+                backgroundColor: "rgba(255, 255, 255, 0.8)",
                 backdropFilter: "blur(2px)",
               }}
             >
@@ -93,24 +93,13 @@ function ProductCard({ product, preload }: Props) {
           )}
         </div>
 
-        <div class="flex flex-col gap-1 py-2">
-          <Text
-            class="overflow-hidden overflow-ellipsis whitespace-nowrap"
-            variant="caption"
-          >
-            {name}
-          </Text>
-          <div class="flex items-center gap-2">
-            <Text
-              class="line-through"
-              variant="list-price"
-              tone="subdued"
-            >
-              {formatPrice(listPrice, offers!.priceCurrency!)}
-            </Text>
-            <Text variant="caption" tone="price">
-              {formatPrice(price, offers!.priceCurrency!)}
-            </Text>
+        <div class="flex flex-col gap-1 py-2" style="font-family: 'Neo Sans', sans-serif;">
+          <div class="text-center text-[0.625]">{name}</div>
+          <div class="flex items-center gap-2 justify-center">
+          <div class="flex flex-row gap-2">
+            <div class="text-center text-[0.75] font-normal line-through">{formatPrice(listPrice, offers!.priceCurrency!)}</div>
+            <div class="text-center text-[0.875] font-medium">{formatPrice(listPrice, offers!.priceCurrency!)}</div>
+          </div>
           </div>
         </div>
       </a>
