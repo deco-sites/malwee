@@ -18,7 +18,7 @@ export default function Featured({images}: Props) {
                     return (
                         <div>
                             <a href={image.url} class="block overflow-hidden">
-                                <img src={image.image} alt="" class="md:hover:transform md:hover:scale-110" />
+                                <img src={image.image} alt="" class="transition ease-in-out duration-300 md:hover:transform md:hover:scale-110" />
                             </a>
                         </div>
                     )

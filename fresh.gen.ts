@@ -27,18 +27,19 @@ import * as $$$7 from "./sections/Features.tsx";
 import * as $$$8 from "./sections/Footer.tsx";
 import * as $$$9 from "./sections/Header.tsx";
 import * as $$$10 from "./sections/Highlights.tsx";
-import * as $$$11 from "./sections/ProductDetails.tsx";
-import * as $$$12 from "./sections/ProductGallery.tsx";
-import * as $$$13 from "./sections/ProductShelf.tsx";
-import * as $$$14 from "./sections/SearchControls.tsx";
-import * as $$$15 from "./sections/Sustentability.tsx";
-import * as $$$16 from "./sections/WhatsApp.tsx";
-import * as $$$17 from "deco-sites/std/sections/SEO.tsx";
-import * as $$$18 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as $$$19 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as $$$20 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as $$$21 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as $$$22 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as $$$11 from "./sections/Posts.tsx";
+import * as $$$12 from "./sections/ProductDetails.tsx";
+import * as $$$13 from "./sections/ProductGallery.tsx";
+import * as $$$14 from "./sections/ProductShelf.tsx";
+import * as $$$15 from "./sections/SearchControls.tsx";
+import * as $$$16 from "./sections/Sustentability.tsx";
+import * as $$$17 from "./sections/WhatsApp.tsx";
+import * as $$$18 from "deco-sites/std/sections/SEO.tsx";
+import * as $$$19 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as $$$20 from "deco-sites/std/sections/SEOPLP.tsx";
+import * as $$$21 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as $$$22 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as $$$23 from "deco-sites/std/sections/configVTEX.global.tsx";
 import * as $$$$0 from "./functions/categoriesVtex.ts";
 import * as $$$$1 from "$live/functions/EffectSelectPage.ts";
 import * as $$$$2 from "$live/functions/MatchDate.ts";
@@ -87,18 +88,19 @@ const manifest: DecoManifest = {
     "./sections/Footer.tsx": $$$8,
     "./sections/Header.tsx": $$$9,
     "./sections/Highlights.tsx": $$$10,
-    "./sections/ProductDetails.tsx": $$$11,
-    "./sections/ProductGallery.tsx": $$$12,
-    "./sections/ProductShelf.tsx": $$$13,
-    "./sections/SearchControls.tsx": $$$14,
-    "./sections/Sustentability.tsx": $$$15,
-    "./sections/WhatsApp.tsx": $$$16,
-    "deco-sites/std/sections/SEO.tsx": $$$17,
-    "deco-sites/std/sections/SEOPDP.tsx": $$$18,
-    "deco-sites/std/sections/SEOPLP.tsx": $$$19,
-    "deco-sites/std/sections/configOCC.global.tsx": $$$20,
-    "deco-sites/std/sections/configShopify.global.tsx": $$$21,
-    "deco-sites/std/sections/configVTEX.global.tsx": $$$22,
+    "./sections/Posts.tsx": $$$11,
+    "./sections/ProductDetails.tsx": $$$12,
+    "./sections/ProductGallery.tsx": $$$13,
+    "./sections/ProductShelf.tsx": $$$14,
+    "./sections/SearchControls.tsx": $$$15,
+    "./sections/Sustentability.tsx": $$$16,
+    "./sections/WhatsApp.tsx": $$$17,
+    "deco-sites/std/sections/SEO.tsx": $$$18,
+    "deco-sites/std/sections/SEOPDP.tsx": $$$19,
+    "deco-sites/std/sections/SEOPLP.tsx": $$$20,
+    "deco-sites/std/sections/configOCC.global.tsx": $$$21,
+    "deco-sites/std/sections/configShopify.global.tsx": $$$22,
+    "deco-sites/std/sections/configVTEX.global.tsx": $$$23,
   },
   functions: {
     "./functions/categoriesVtex.ts": $$$$0,
@@ -1026,6 +1028,57 @@ const manifest: DecoManifest = {
         },
         "required": [
           "title",
+        ],
+      },
+      "outputSchema": null,
+    },
+    "./sections/Posts.tsx": {
+      "inputSchema": {
+        "title": " Posts",
+        "type": "object",
+        "properties": {
+          "title": {
+            "type": "string",
+            "title": "Title",
+          },
+          "posts": {
+            "type": "array",
+            "items": {
+              "title": "Post",
+              "type": "object",
+              "properties": {
+                "image": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Image",
+                },
+                "imageMob": {
+                  "format": "image-uri",
+                  "type": "string",
+                  "title": "Image Mob",
+                },
+                "url": {
+                  "type": "string",
+                  "title": "Url",
+                },
+                "text": {
+                  "type": "string",
+                  "title": "Text",
+                },
+              },
+              "required": [
+                "image",
+                "imageMob",
+                "url",
+                "text",
+              ],
+            },
+            "title": "Posts",
+          },
+        },
+        "required": [
+          "title",
+          "posts",
         ],
       },
       "outputSchema": null,
