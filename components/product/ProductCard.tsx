@@ -23,7 +23,7 @@ function Sizes(product: Product) {
       {options.map(([url, value]) => (
         <a href={url}>
           <Avatar
-            class="bg-default"
+            class="bg-transparent"
             variant="abbreviation"
             content={value}
             disabled={url === product.url}
@@ -85,7 +85,10 @@ function ProductCard({ product, preload }: Props) {
               }}
             >
               <Sizes {...product} />
-              <Button as="a" href={product.url}>Visualizar Produto</Button>
+              <Button as="a" href={product.url} variant='malwee'>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="19" viewBox="0 0 16 19"><path d="M16 18.376L14.592 4.624a.556.556 0 0 0-.547-.506H11.4V3.5A3.456 3.456 0 0 0 8 0a3.456 3.456 0 0 0-3.4 3.5v.619H1.955a.556.556 0 0 0-.547.506L0 18.376a.577.577 0 0 0 .138.437A.544.544 0 0 0 .55 19h14.9a.544.544 0 0 0 .409-.187.576.576 0 0 0 .141-.437zM5.7 3.5a2.304 2.304 0 1 1 4.607 0v.619H5.7zM1.161 17.869L2.45 5.249H4.6v1.246a.55.55 0 1 0 1.1 0V5.249h4.6v1.246a.55.55 0 1 0 1.1 0V5.249h2.145l1.29 12.621zm0 0" fill="white"></path></svg>
+                COMPRA RÁPIDA
+              </Button>
             </div>
           )}
         </div>
