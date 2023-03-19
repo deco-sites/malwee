@@ -34,7 +34,7 @@ export interface Props {
 export default function FooterMalwee({footer, contact, faq}: Props) {
     return (
         <section class="flex flex-col pt-[1.6875rem] px-[3.125rem] w-full" style="font-family: 'Neo Sans', sans-serif;">
-            <div class="flex flex-col gap-8 pb-8 border-b md:flex-row md:justify-between">
+            <div class="flex flex-col gap-8 pb-12 border-b md:flex-row md:justify-between">
                 {contact.map((line) => {
                     return (
                         <div>
@@ -47,7 +47,7 @@ export default function FooterMalwee({footer, contact, faq}: Props) {
                     )
                 })}
             </div>
-            <div class="flex flex-col gap-2 py-4 md:flex-row md:justify-between">
+            <div class="flex flex-col gap-2 py-8 md:flex-row md:justify-between">
                 <div class="flex flex-col gap-4">
                     <div class="flex justify-center">
                         <Icon id="Logo" width={149} height={30} />
