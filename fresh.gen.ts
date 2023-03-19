@@ -1075,10 +1075,15 @@ const manifest: DecoManifest = {
             },
             "title": "Posts",
           },
+          "blogUrl": {
+            "type": "string",
+            "title": "Blog Url",
+          },
         },
         "required": [
           "title",
           "posts",
+          "blogUrl",
         ],
       },
       "outputSchema": null,
