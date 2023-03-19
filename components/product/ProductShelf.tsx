@@ -30,7 +30,7 @@ function ProductShelf({
       id={id}
       class="grid grid-cols-[48px_1fr_48px] grid-rows-[48px_1fr_48px_1fr] py-10 px-0 sm:px-5"
     >
-      <div class="text-[1.125rem] font-bold whitespace-nowrap pl-4 md:pl-0" style="font-family: 'Neo Sans', sans-serif;">{title}</div>
+      <p class="text-[1.125rem] font-bold pl-[1.5rem] pb-2 md:pl-0 w-[80vw]" style="font-family: 'Neo Sans', sans-serif;">{title}</p>
 
       <Slider
         class="gap-6 col-span-full row-start-2 row-end-5 hidden-scroll"
