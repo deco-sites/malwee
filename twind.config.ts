@@ -135,6 +135,9 @@ const options: Omit<Options, "selfURL"> = {
     'section[data-manifest-key="./sections/Footer.tsx"]': {
       marginTop: "auto",
     },
+    'details[open] summary svg': {
+      'transform': 'rotate(180deg)'
+    },
 
     // Prevent scroll when modal is open
     "body[no-scroll]": {

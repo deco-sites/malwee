@@ -25,21 +25,22 @@ import * as $$$5 from "./sections/DesignSystem.story.tsx";
 import * as $$$6 from "./sections/Featured.tsx";
 import * as $$$7 from "./sections/Features.tsx";
 import * as $$$8 from "./sections/Footer.tsx";
-import * as $$$9 from "./sections/Header.tsx";
-import * as $$$10 from "./sections/Highlights.tsx";
-import * as $$$11 from "./sections/Posts.tsx";
-import * as $$$12 from "./sections/ProductDetails.tsx";
-import * as $$$13 from "./sections/ProductGallery.tsx";
-import * as $$$14 from "./sections/ProductShelf.tsx";
-import * as $$$15 from "./sections/SearchControls.tsx";
-import * as $$$16 from "./sections/Sustentability.tsx";
-import * as $$$17 from "./sections/WhatsApp.tsx";
-import * as $$$18 from "deco-sites/std/sections/SEO.tsx";
-import * as $$$19 from "deco-sites/std/sections/SEOPDP.tsx";
-import * as $$$20 from "deco-sites/std/sections/SEOPLP.tsx";
-import * as $$$21 from "deco-sites/std/sections/configOCC.global.tsx";
-import * as $$$22 from "deco-sites/std/sections/configShopify.global.tsx";
-import * as $$$23 from "deco-sites/std/sections/configVTEX.global.tsx";
+import * as $$$9 from "./sections/FooterMalwee.tsx";
+import * as $$$10 from "./sections/Header.tsx";
+import * as $$$11 from "./sections/Highlights.tsx";
+import * as $$$12 from "./sections/Posts.tsx";
+import * as $$$13 from "./sections/ProductDetails.tsx";
+import * as $$$14 from "./sections/ProductGallery.tsx";
+import * as $$$15 from "./sections/ProductShelf.tsx";
+import * as $$$16 from "./sections/SearchControls.tsx";
+import * as $$$17 from "./sections/Sustentability.tsx";
+import * as $$$18 from "./sections/WhatsApp.tsx";
+import * as $$$19 from "deco-sites/std/sections/SEO.tsx";
+import * as $$$20 from "deco-sites/std/sections/SEOPDP.tsx";
+import * as $$$21 from "deco-sites/std/sections/SEOPLP.tsx";
+import * as $$$22 from "deco-sites/std/sections/configOCC.global.tsx";
+import * as $$$23 from "deco-sites/std/sections/configShopify.global.tsx";
+import * as $$$24 from "deco-sites/std/sections/configVTEX.global.tsx";
 import * as $$$$0 from "./functions/categoriesVtex.ts";
 import * as $$$$1 from "$live/functions/EffectSelectPage.ts";
 import * as $$$$2 from "$live/functions/MatchDate.ts";
@@ -86,21 +87,22 @@ const manifest: DecoManifest = {
     "./sections/Featured.tsx": $$$6,
     "./sections/Features.tsx": $$$7,
     "./sections/Footer.tsx": $$$8,
-    "./sections/Header.tsx": $$$9,
-    "./sections/Highlights.tsx": $$$10,
-    "./sections/Posts.tsx": $$$11,
-    "./sections/ProductDetails.tsx": $$$12,
-    "./sections/ProductGallery.tsx": $$$13,
-    "./sections/ProductShelf.tsx": $$$14,
-    "./sections/SearchControls.tsx": $$$15,
-    "./sections/Sustentability.tsx": $$$16,
-    "./sections/WhatsApp.tsx": $$$17,
-    "deco-sites/std/sections/SEO.tsx": $$$18,
-    "deco-sites/std/sections/SEOPDP.tsx": $$$19,
-    "deco-sites/std/sections/SEOPLP.tsx": $$$20,
-    "deco-sites/std/sections/configOCC.global.tsx": $$$21,
-    "deco-sites/std/sections/configShopify.global.tsx": $$$22,
-    "deco-sites/std/sections/configVTEX.global.tsx": $$$23,
+    "./sections/FooterMalwee.tsx": $$$9,
+    "./sections/Header.tsx": $$$10,
+    "./sections/Highlights.tsx": $$$11,
+    "./sections/Posts.tsx": $$$12,
+    "./sections/ProductDetails.tsx": $$$13,
+    "./sections/ProductGallery.tsx": $$$14,
+    "./sections/ProductShelf.tsx": $$$15,
+    "./sections/SearchControls.tsx": $$$16,
+    "./sections/Sustentability.tsx": $$$17,
+    "./sections/WhatsApp.tsx": $$$18,
+    "deco-sites/std/sections/SEO.tsx": $$$19,
+    "deco-sites/std/sections/SEOPDP.tsx": $$$20,
+    "deco-sites/std/sections/SEOPLP.tsx": $$$21,
+    "deco-sites/std/sections/configOCC.global.tsx": $$$22,
+    "deco-sites/std/sections/configShopify.global.tsx": $$$23,
+    "deco-sites/std/sections/configVTEX.global.tsx": $$$24,
   },
   functions: {
     "./functions/categoriesVtex.ts": $$$$0,
@@ -807,6 +809,124 @@ const manifest: DecoManifest = {
           },
         },
         "required": [],
+      },
+      "outputSchema": null,
+    },
+    "./sections/FooterMalwee.tsx": {
+      "inputSchema": {
+        "title": " Footer Malwee",
+        "type": "object",
+        "properties": {
+          "contact": {
+            "type": "array",
+            "items": {
+              "title": "Contact",
+              "type": "object",
+              "properties": {
+                "icon": {
+                  "type": "string",
+                  "title": "Icon",
+                },
+                "title": {
+                  "type": "string",
+                  "title": "Title",
+                },
+                "linkText": {
+                  "type": "string",
+                  "title": "Link Text",
+                },
+                "linkUrl": {
+                  "type": "string",
+                  "title": "Link Url",
+                },
+                "isLink": {
+                  "type": "boolean",
+                  "title": "Is Link",
+                },
+              },
+              "required": [
+                "icon",
+                "title",
+                "linkText",
+                "linkUrl",
+                "isLink",
+              ],
+            },
+            "title": "Contact",
+          },
+          "footer": {
+            "title": "Footer",
+            "type": "object",
+            "properties": {
+              "title": {
+                "type": "string",
+                "title": "Title",
+              },
+              "instagram": {
+                "type": "string",
+                "title": "Instagram",
+              },
+              "facebook": {
+                "type": "string",
+                "title": "Facebook",
+              },
+              "youtube": {
+                "type": "string",
+                "title": "Youtube",
+              },
+            },
+            "required": [
+              "title",
+              "instagram",
+              "facebook",
+              "youtube",
+            ],
+          },
+          "faq": {
+            "type": "array",
+            "items": {
+              "title": "Faq",
+              "type": "object",
+              "properties": {
+                "question": {
+                  "type": "string",
+                  "title": "Question",
+                },
+                "answer": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "text": {
+                        "type": "string",
+                        "title": "Text",
+                      },
+                      "url": {
+                        "type": "string",
+                        "title": "Url",
+                      },
+                    },
+                    "required": [
+                      "text",
+                      "url",
+                    ],
+                  },
+                  "title": "Answer",
+                },
+              },
+              "required": [
+                "question",
+                "answer",
+              ],
+            },
+            "title": "Faq",
+          },
+        },
+        "required": [
+          "contact",
+          "footer",
+          "faq",
+        ],
       },
       "outputSchema": null,
     },
